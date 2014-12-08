@@ -1,2 +1,2 @@
 #! /bin/sh
-cmd /c start .
+cmd /c echo 123
