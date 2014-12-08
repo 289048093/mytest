@@ -1,2 +1,2 @@
 #! /bin/sh
-cmd /c shutdown -i
+cmd /c start .
