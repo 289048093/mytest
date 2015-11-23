@@ -1,2 +1,2 @@
 #! /bin/sh
-cmd /c echo 123
+echo 123
