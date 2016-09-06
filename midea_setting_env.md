@@ -89,9 +89,13 @@ public class PropertyUtils {
     // codes... ...
 }
 ```
-- 关于idea开发环境测试：
+- 关于开发环境测试：
 
-intellij ideax下设置环境变量(数据可在properties文件和idea环境变量编辑窗口相互拷贝粘贴)：
+1. 可以直接配置在系统环境变量中,不推荐，配置麻烦不说，还无法多个项目配置隔离。
+
+2. 推荐在开发工具中设置：
+
+intellij ideax下设置环境变量方法(数据可在properties文件和idea环境变量编辑窗口相互拷贝粘贴，多个项目可单独配置，互相隔离，不会造成配置相互污染)：
 
 **web应用:**
 
