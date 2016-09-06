@@ -49,8 +49,9 @@ bean配置：
 支持情况：支持环境变量配置Dubbo
 
 ```xml
+    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="${MOA_DUBBO_DEMO}"/>
     <!-- 使用注册中心暴露服务地址 -->
-    <!--或者<dubbo:registry address="zookeeper://${MOA_ZK_CONNECT}"/>-->
     <dubbo:registry address="zookeeper://${MOA_DUBBO_ZK_CONNECT}"/>
     <!-- 用dubbo协议端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="${MOA_DUBBO_PORT}"/>
