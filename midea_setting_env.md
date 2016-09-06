@@ -37,7 +37,7 @@ bean配置：
 ```xml
     <!-- 使用注册中心暴露服务地址 -->
     <!--或者<dubbo:registry address="zookeeper://${MOA_ZK_CONNECT}"/>-->
-    <dubbo:registry address="${MOA_DUBBO_REGESTRY_CONNECT}"/>
+    <dubbo:registry address="zookeeper://${MOA_DUBBO_ZK_CONNECT}"/>
     <!-- 用dubbo协议端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="${MOA_DUBBO_PORT}"/>
 ```
