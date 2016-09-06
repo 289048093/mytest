@@ -36,6 +36,8 @@ bean配置：
     <dubbo:protocol name="dubbo" port="${MOA_DUBBO_PORT}"/>
 ```
 
+##其他支持环境变量
+
 ##常见问题：
 
  - 必须在spring xml配置文件中加入如下代码（所有与spring集成的框架都需要加入这段代码，才能通过变量配置）:
