@@ -73,7 +73,7 @@ public class PropertyUtils {
 
 intellij ideax下设置环境变量(数据可在properties文件和idea环境变量编辑窗口相互拷贝粘贴)：
 
-**tomcat:**
+**web应用:**
 
 1.先打开配置界面
 
