@@ -12,7 +12,19 @@ why:
 
 **测试版本**：4.2.2.RELEASE
 
-**支持情况**：支持环境变量配置各种bean,通过bean属性注入的配置都支持环境变量配置，比如：spring各种dateSource(spring-jdbc,spring-mybatis,spring-hibernate),spring-ldap,spring-security,spring-mongodb,spring-session,spring-data-redis...
+**支持情况**：支持环境变量配置各种bean,通过bean属性注入的配置都支持环境变量配置，比如：
+
+spring各种dateSource(spring-jdbc,spring-mybatis,spring-hibernate),
+
+spring-ldap,
+
+spring-security,
+
+spring-mongodb,
+
+spring-session,
+
+spring-data-redis...
 
 **Demo**：
 环境变量设置：
@@ -54,7 +66,12 @@ bean配置：
     <!-- 加载配置属性 -->
     <context:property-placeholder/>
 ```
-- 环境变量KEY必须符合shell变量命名规则，建议使用全大写（有些工具只支持大写命名，如与github持续集成的工具travis），单词用“_”隔开，不能用"."等标点符号, 如：“MOA_DUBBO_ZK_CONNECT”；
+- 环境变量KEY必须符合shell变量命名规则，建议使用全大写（有些工具只支持大写命名，如与github持续集成的工具travis），单词用“_”隔开，不能用"."等标点符号,以项目名缩写开头，便于在shell下查看， 如：“MOA_DUBBO_ZK_CONNECT”...,在shell下查看的时候可以用grep查看项目配置：
+
+```bash
+    env |grep MOA_
+```
+
 - 在java代码中获取环境变量：
 ```java
     System.getenv("MOA_ZK_CONNECT")
