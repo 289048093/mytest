@@ -6,7 +6,9 @@
 
 --- 
 目前支持框架：
-##spring原生
+
+##原生spring
+
 **测试版本**：4.2.2.RELEASE
 
 **支持情况**：支持环境变量配置各种bean,通过bean属性注入的配置都支持环境变量配置，比如：spring各种dateSource(spring-jdbc,spring-mybatis,spring-hibernate),spring-ldap,spring-security,spring-mongodb,spring-session,spring-data-redis...
@@ -26,8 +28,11 @@ bean配置：
 
 
 ##Dubbo+Spring
+
 测试版本：2.5.6
+
 支持情况：支持环境变量配置Dubbo
+
 ```xml
     <!-- 使用注册中心暴露服务地址 -->
     <!--或者<dubbo:registry address="zookeeper://${MOA_ZK_CONNECT}"/>-->
@@ -36,7 +41,10 @@ bean配置：
     <dubbo:protocol name="dubbo" port="${MOA_DUBBO_PORT}"/>
 ```
 
-##其他支持环境变量
+##其他支持环境变量的项目
+
+- docker
+- 亚马逊aws，七牛等云平台sdk
 
 ##常见问题：
 
