@@ -8,6 +8,7 @@
 目前支持框架：
 ##spring原生
 **测试版本**：4.2.2.RELEASE
+
 **支持情况**：支持环境变量配置各种bean,通过bean属性注入的配置都支持环境变量配置，比如：spring各种dateSource(spring-jdbc,spring-mybatis,spring-hibernate),spring-ldap,spring-security,spring-mongodb,spring-session,spring-data-redis...
 
 **Demo**：
